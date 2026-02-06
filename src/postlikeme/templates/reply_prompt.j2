@@ -1,0 +1,12 @@
+## How @{{ profile.username }} replies to tweets:
+{% for context, reply in profile.example_tweets.replies[:12] %}
+Original: {{ context }}
+Reply: {{ reply }}
+---
+{% endfor %}
+
+Here is a tweet to reply to:
+"{{ target_tweet }}"
+
+Write a reply as @{{ profile.username }} would. Match the reply style, tone, and length shown in the examples above.
+Write ONLY the reply text, nothing else. No quotation marks around it. No labels or prefixes.

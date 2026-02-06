@@ -1,0 +1,13 @@
+## Examples of how @{{ profile.username }} tweets:
+{% for tweet in profile.example_tweets.originals[:15] %}
+---
+{{ tweet }}
+{% endfor %}
+---
+
+{% if topic %}
+Write a new tweet about "{{ topic }}" in the exact style shown above.
+{% else %}
+Write a new tweet in the exact style shown above. Choose a topic this person would naturally tweet about based on their interests.
+{% endif %}
+Write ONLY the tweet text, nothing else. No quotation marks around it. No labels or prefixes.
